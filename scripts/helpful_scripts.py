@@ -5,6 +5,7 @@ from brownie import (
     MockV3Aggregator,
     Contract,
     VRFCoordinatorMock,
+    LinkToken,
 )
 
 LOCAL_BLOCKCHAIN_ENVIROMENTS = ["development", "ganache-local", "mainnet-fork-dev"]
@@ -15,6 +16,7 @@ STARTING_PRICE = 20000000000
 contract_to_mock = {
     "eth_usd_price_feed": MockV3Aggregator,
     "vrf_coordinator": VRFCoordinatorMock,
+    "link_token": LinkToken,
 }
 
 
